@@ -88,7 +88,7 @@ async function delay(ms) {
 
   const amountToSend = 0.001 //minimum 0.001 sol
   let currentKeypairIndex = 0
-  const delayBetweenRequests = 5000 //replace if the network is congested
+  const delayBetweenRequests = 1000 //replace if the network is congested
 
   const solBalance = (await getSolanaBalance(keypairs[currentKeypairIndex])) / LAMPORTS_PER_SOL
   if (solBalance <= 0) {
